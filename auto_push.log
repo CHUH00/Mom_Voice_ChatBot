@@ -561,11 +561,12 @@ Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 17분 07초 KST
 To https://github.com/CHUH00/Mom_Voice_ChatBot.git
    bee1abc..d133d9f  main -> main
 Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 18분 08초 KST
-다: File exists.
-
-이 저장소에서 다른 깃 프로세스가 실행 중인 것으로 보입니다. (예를
-들어 'git commit' 명령으로 편집기가 열려 있다든지.) 모든 프로세스를
-끝냈는지 확인하시고 다시 시도해 보십시오. 그래도 계속 실패하면, 이
+[main d64645e] Auto-commit: 2026년  4월  1일 수요일 01시 19분 08초 KST
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+To https://github.com/CHUH00/Mom_Voice_ChatBot.git
+   d9d59da..d64645e  main -> main
+Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 19분 09초 KST
+ 이
 저장소에서 깃 프로세스가 전에 이상 종료했을 수도 있습니다:
 수동으로 해당 파일을 제거하고 계속하십시오.
 [main c18423d] Auto-commit: 2026년  4월  1일 수요일 01시 01분 29초 KST
