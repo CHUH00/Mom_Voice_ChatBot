@@ -8,3 +8,8 @@ objc[69106]: +[NSString initialize] may have been in progress in another thread 
 objc[69106]: +[NSString initialize] may have been in progress in another thread when fork() was called. We cannot safely call it or ignore it in the fork() child process. Crashing instead. Set a breakpoint on objc_initializeAfterForkError to debug.
 00:45:01 Worker 0995259673b24cb4a4e8fc5b4f93e585: job 1ebf40c9-3cec-44d6-bd63-de2e00bf706e failed (Work-horse terminated unexpectedly; waitpid returned 6 (signal 6); )
 00:45:01 Work horse killed for job 1ebf40c9-3cec-44d6-bd63-de2e00bf706e: retpid=69106, ret_val=6
+00:45:23 default: backend.services.audio_service.process_separation_job(1) (cba6fbf5-bac1-4bdd-a937-8666d525b800)
+objc[69423]: +[NSString initialize] may have been in progress in another thread when fork() was called.
+objc[69423]: +[NSString initialize] may have been in progress in another thread when fork() was called. We cannot safely call it or ignore it in the fork() child process. Crashing instead. Set a breakpoint on objc_initializeAfterForkError to debug.
+00:45:24 Worker 0995259673b24cb4a4e8fc5b4f93e585: job cba6fbf5-bac1-4bdd-a937-8666d525b800 failed (Work-horse terminated unexpectedly; waitpid returned 6 (signal 6); )
+00:45:24 Work horse killed for job cba6fbf5-bac1-4bdd-a937-8666d525b800: retpid=69423, ret_val=6
