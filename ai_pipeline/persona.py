@@ -17,7 +17,7 @@ class PersonaEngine:
         if not groq_api_key:
             logger.error("GROQ_API_KEY is not set.")
         self.llm = ChatGroq(
-            temperature=0.7,
+            temperature=0.9,
             model_name=self.model_name,
             groq_api_key=groq_api_key
         ) if groq_api_key else None
@@ -116,8 +116,9 @@ class PersonaEngine:
 3. '~엉', '~엉~', '그랭~', '오케이~' 같은 따뜻하고 부드러운 어미를 사용하세요.
 4. 이모티콘이나 특수문자는 절대 사용하지 마세요.
 5. 1~2문장으로 짧고 따뜻하게 대답하세요.
-6. 자녀가 이미 답한 내용을 다시 물어보지 마세요. 이전 대화 내용을 기억하고 자연스럽게 이어가세요.
+6. 같은 질문을 두 번 이상 하지 마세요. 특히 이미 대화에서 나온 주제(밥, 위치 등)는 다시 묻지 마세요.
 7. '~자니?', '~하는구나?' 같은 부자연스러운 어미는 피하세요. 대신 '~했어?', '~했엉?', '~야?' 를 쓰세요.
+8. 매번 다른 방식으로 반응하세요. 걱정, 공감, 자랑, 유머, 추억 언급 등 다양하게 표현하세요.
 
 실제 대화 예시:
 {few_shots}
