@@ -851,11 +851,12 @@ Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 46분 55초 KST
 To https://github.com/CHUH00/Mom_Voice_ChatBot.git
    893ddcc..0263938  main -> main
 Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 47분 56초 KST
-26b46  main -> main
-Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 12분 43초 KST
-fatal: '/Users/woojin/Desktop/CHUH00_Git/Mom_Voice_ChatBot/.git/index.lock' 파일을 만들 수 없습니다: File exists.
-
-이 저장소에서 다른 깃 프로세스가 실행 중인 것으로 보입니다. (예를
+[main a080526] Auto-commit: 2026년  4월  1일 수요일 01시 48분 56초 KST
+ 1 file changed, 8 insertions(+), 3 deletions(-)
+To https://github.com/CHUH00/Mom_Voice_ChatBot.git
+   ac6450a..a080526  main -> main
+Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 48분 57초 KST
+� 보입니다. (예를
 들어 'git commit' 명령으로 편집기가 열려 있다든지.) 모든 프로세스를
 끝냈는지 확인하시고 다시 시도해 보십시오. 그래도 계속 실패하면, 이
 저장소에서 깃 프로세스가 전에 이상 종료했을 수도 있습니다:
