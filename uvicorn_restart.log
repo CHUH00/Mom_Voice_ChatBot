@@ -193,3 +193,4 @@ INFO:     Finished server process [55705]
 INFO:     Started server process [55838]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
+INFO:     127.0.0.1:62448 - "POST /api/audio/upload HTTP/1.1" 200 OK
