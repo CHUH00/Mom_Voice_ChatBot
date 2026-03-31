@@ -1,6 +1,6 @@
 import os
 import logging
-from langchain_community.llms import Ollama
+from langchain_groq import ChatGroq
 from langchain_core.prompts import PromptTemplate
 from typing import List, Dict
 import json
@@ -8,9 +8,16 @@ import json
 logger = logging.getLogger(__name__)
 
 class PersonaEngine:
-    def __init__(self, model_name="llama3"):
+    def __init__(self, model_name="llama-3.3-70b-versatile", api_key=None):
         self.model_name = model_name
-        self.llm = Ollama(model=model_name)
+        groq_api_key = api_key or os.getenv("GROQ_API_KEY")
+        if not groq_api_key:
+            logger.error("GROQ_API_KEY is not set.")
+        self.llm = ChatGroq(
+            temperature=0.7,
+            model_name=self.model_name,
+            groq_api_key=groq_api_key
+        ) if groq_api_key else None
         
     def extract_persona_rules(self, texts: List[str], user_notes: str) -> Dict:
         """
@@ -40,7 +47,10 @@ class PersonaEngine:
         # This assumes the LLM can output JSON correctly
         chain = prompt | self.llm
         try:
-            response = chain.invoke({"texts": combined_text, "user_notes": user_notes})
+            if not self.llm:
+                return {}
+            response_obj = chain.invoke({"texts": combined_text, "user_notes": user_notes})
+            response = response_obj.content if hasattr(response_obj, 'content') else str(response_obj)
             # Naive parsing
             start_idx = response.find("{")
             end_idx = response.rfind("}") + 1
@@ -83,4 +93,11 @@ class PersonaEngine:
         )
         
         chain = prompt | self.llm
-        return chain.invoke({"rules": rules_str, "history": history_str, "query": query})
+        if not self.llm:
+            return "앗, 엄마가 지금 전화를 못 받네. (Groq API 키가 입력되지 않았습니다!)"
+        try:
+            response_obj = chain.invoke({"rules": rules_str, "history": history_str, "query": query})
+            return response_obj.content if hasattr(response_obj, 'content') else str(response_obj)
+        except Exception as e:
+            logger.error(f"Groq API Error: {e}")
+            return f"(오류: API 통신 실패 - {str(e)})"
