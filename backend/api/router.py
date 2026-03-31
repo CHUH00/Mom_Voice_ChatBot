@@ -13,6 +13,9 @@ import logging
 import subprocess
 import uuid
 
+# In-memory conversation history (resets on server restart)
+conversation_history: list = []
+
 api_router = APIRouter()
 redis_conn = Redis.from_url(settings.REDIS_URL)
 task_queue = Queue(connection=redis_conn)
@@ -101,7 +104,15 @@ def chat_text(message: str, request: Request):
             "topics": ["건강", "밥", "날씨", "가족"]
         }
         
-        reply = persona_engine.chat_with_persona(query=message, profile_rules=rules, chat_history=[])
+        reply = persona_engine.chat_with_persona(
+            query=message,
+            profile_rules=rules,
+            chat_history=conversation_history[-10:]  # 업마지 최근 10개 대화만 전달
+        )
+        
+        # 대화 기록 저장
+        conversation_history.append(f"자녀: {message}")
+        conversation_history.append(f"엄마: {reply}")
         
         # Fallback TTS using macOS 'say' (Yuna voice)
         audio_filename = f"reply_{uuid.uuid4().hex}.m4a"
