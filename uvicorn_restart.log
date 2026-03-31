@@ -47,3 +47,4 @@ Traceback (most recent call last):
   File "/Users/woojin/Desktop/CHUH00_Git/Mom_Voice_ChatBot/ai_pipeline/persona.py", line 4, in <module>
     from langchain.prompts import PromptTemplate
 ModuleNotFoundError: No module named 'langchain.prompts'
+INFO:     Stopping reloader process [35857]
