@@ -1114,9 +1114,12 @@ To https://github.com/CHUH00/Mom_Voice_ChatBot.git
  ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at 893ddcc7ace21ab859a35d11880af8875bccb1e8 but expected a2e943e6ddec716e790b5abfec9004b1547f80a5)
 error: 레퍼런스를 'https://github.com/CHUH00/Mom_Voice_ChatBot.git'에 푸시하는데 실패했습니다
 Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 47분 41초 KST
-m_Voice_ChatBot.git
- ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at 7b337581ed7c4fc0b20582e34623de31806509d9 but expected a2dc9f6cb44e8fb1b5c948213851517855fd3e54)
-error: 레퍼런스를 'https://github.com/CHUH00/Mom_Voice_ChatBot.git'에 푸시하는데 실패했습니다
+[main ac6450a] Auto-commit: 2026년  4월  1일 수요일 01시 48분 41초 KST
+ 1 file changed, 13 insertions(+), 1 deletion(-)
+To https://github.com/CHUH00/Mom_Voice_ChatBot.git
+   fab9f0b..ac6450a  main -> main
+Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 48분 42초 KST
+��니다
 Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 11분 42초 KST
 [main cf26b46] Auto-commit: 2026년  4월  1일 수요일 01시 12분 42초 KST
  2 files changed, 7 insertions(+), 3 deletions(-)
@@ -1404,3 +1407,5 @@ fatal: '/Users/woojin/Desktop/CHUH00_Git/Mom_Voice_ChatBot/.git/index.lock' 파�
 끝냈는지 확인하시고 다시 시도해 보십시오. 그래도 계속 실패하면, 이
 저장소에서 깃 프로세스가 전에 이상 종료했을 수도 있습니다:
 수동으로 해당 파일을 제거하고 계속하십시오.
+Everything up-to-date
+Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 48분 42초 KST
