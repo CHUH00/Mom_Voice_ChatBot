@@ -942,9 +942,12 @@ Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 56분 08초 KST
 To https://github.com/CHUH00/Mom_Voice_ChatBot.git
    8b15974..4dce5f4  main -> main
 Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 57분 09초 KST
-jected] main -> main (cannot lock ref 'refs/heads/main': is at a90cf9947b57910c03f3811111780a2eec3e85e7 but expected 114ca0f234e0c09b943a7c2996a3ef45b4bcde84)
-error: 레퍼런스를 'https://github.com/CHUH00/Mom_Voice_ChatBot.git'에 푸시하는데 실패했습니다
-Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 16분 48초 KST
+[main 5af8e77] Auto-commit: 2026년  4월  1일 수요일 01시 58분 09초 KST
+ 1 file changed, 22 insertions(+), 11 deletions(-)
+To https://github.com/CHUH00/Mom_Voice_ChatBot.git
+   0211b90..5af8e77  main -> main
+Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 58분 10초 KST
+t 2026년  4월  1일 수요일 01시 16분 48초 KST
 현재 브랜치 main
 브랜치가 'origin/main'보다 1개 커밋만큼 앞에 있습니다.
   (로컬에 있는 커밋을 제출하려면 "git push"를 사용하십시오)
