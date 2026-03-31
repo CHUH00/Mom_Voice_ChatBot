@@ -1,6 +1,6 @@
 import os
 import shutil
-from fastapi import APIRouter, File, UploadFile, Depends, BackgroundTasks, HTTPException
+from fastapi import APIRouter, File, UploadFile, Depends, BackgroundTasks, HTTPException, Request
 from sqlalchemy.orm import Session
 from typing import List, Optional
 from backend.models.database import get_db, AudioUpload, MotherReference
@@ -10,6 +10,8 @@ from redis import Redis
 from backend.core.config import settings
 from ai_pipeline.persona import PersonaEngine
 import logging
+import subprocess
+import uuid
 
 api_router = APIRouter()
 redis_conn = Redis.from_url(settings.REDIS_URL)
@@ -87,7 +89,7 @@ def get_separation_result(upload_id: int):
     return {"upload_id": upload_id, "mom_only_audio_url": f"/files/mom_only_{upload_id}.wav"}
 
 @api_router.post("/chat/text")
-def chat_text(message: str):
+def chat_text(message: str, request: Request):
     if persona_engine is None:
         return {"reply": "응, 시스템에 접속되지 않았단다. (Llama3 로딩 실패)"}
         
@@ -100,6 +102,18 @@ def chat_text(message: str):
         }
         
         reply = persona_engine.chat_with_persona(query=message, profile_rules=rules, chat_history=[])
-        return {"reply": reply}
+        
+        # Fallback TTS using macOS 'say' (Yuna voice)
+        audio_filename = f"reply_{uuid.uuid4().hex}.m4a"
+        audio_filepath = os.path.join("assets", "uploads", audio_filename)
+        try:
+            subprocess.run(["say", "-v", "Yuna", "-o", audio_filepath, reply], check=True)
+            base_url = str(request.base_url).rstrip('/')
+            audio_url = f"{base_url}/assets/uploads/{audio_filename}"
+        except Exception as e:
+            logging.error(f"TTS generation failed: {e}")
+            audio_url = None
+            
+        return {"reply": reply, "audio_url": audio_url}
     except Exception as e:
         return {"reply": f"앗, 엄마가 지금 전화를 못 받네. (에러: {str(e)})"}
