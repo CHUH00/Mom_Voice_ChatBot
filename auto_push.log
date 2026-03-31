@@ -1,1 +1,10 @@
 Starting auto-push daemon...
+[main 89b8b83] Auto-commit: 2026년  3월 31일 화요일 18시 32분 17초 KST
+ 6 files changed, 50 insertions(+), 1 deletion(-)
+ create mode 100644 auto_push.log
+ create mode 100644 docs/demo_scenario.md
+ create mode 100755 start.sh
+ create mode 100644 worker.log
+To https://github.com/CHUH00/Mom_Voice_ChatBot.git
+   af87cad..89b8b83  main -> main
+Changes pushed to GitHub at 2026년  3월 31일 화요일 18시 32분 18초 KST
