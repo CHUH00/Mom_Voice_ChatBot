@@ -198,3 +198,23 @@ INFO:     127.0.0.1:62451 - "POST /api/chat/text?message=%EC%97%84%EB%A7%88+%EC%
 INFO:     127.0.0.1:63438 - "GET /assets/uploads/reply_9fad53f9a063490b88a132c14ce13a80.m4a HTTP/1.1" 206 Partial Content
 INFO:     127.0.0.1:63439 - "GET /assets/uploads/reply_9fad53f9a063490b88a132c14ce13a80.m4a HTTP/1.1" 206 Partial Content
 INFO:     127.0.0.1:63439 - "GET /assets/uploads/reply_9fad53f9a063490b88a132c14ce13a80.m4a HTTP/1.1" 206 Partial Content
+WARNING:  WatchFiles detected changes in 'ai_pipeline/persona.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [55838]
+/Users/woojin/Desktop/CHUH00_Git/Mom_Voice_ChatBot/ai_pipeline/persona.py:13: LangChainDeprecationWarning: The class `Ollama` was deprecated in LangChain 0.3.1 and will be removed in 1.0.0. An updated version of the class exists in the `langchain-ollama package and should be used instead. To use it run `pip install -U `langchain-ollama` and import as `from `langchain_ollama import OllamaLLM``.
+  self.llm = Ollama(model=model_name)
+INFO:     Started server process [58158]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'ai_pipeline/persona.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [58158]
+/Users/woojin/Desktop/CHUH00_Git/Mom_Voice_ChatBot/ai_pipeline/persona.py:13: LangChainDeprecationWarning: The class `Ollama` was deprecated in LangChain 0.3.1 and will be removed in 1.0.0. An updated version of the class exists in the `langchain-ollama package and should be used instead. To use it run `pip install -U `langchain-ollama` and import as `from `langchain_ollama import OllamaLLM``.
+  self.llm = Ollama(model=model_name)
+INFO:     Started server process [58241]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
