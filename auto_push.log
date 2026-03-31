@@ -48,3 +48,10 @@ Changes pushed to GitHub at 2026년  3월 31일 화요일 18시 39분 27초 KST
 To https://github.com/CHUH00/Mom_Voice_ChatBot.git
    3b8c13f..8f1812e  main -> main
 Changes pushed to GitHub at 2026년  3월 31일 화요일 18시 40분 28초 KST
+[main 88f77f2] Auto-commit: 2026년  3월 31일 화요일 18시 41분 28초 KST
+ 3 files changed, 712 insertions(+)
+ create mode 100644 app_mobile/.flutter-plugins-dependencies
+ create mode 100644 app_mobile/pubspec.lock
+To https://github.com/CHUH00/Mom_Voice_ChatBot.git
+   8f1812e..88f77f2  main -> main
+Changes pushed to GitHub at 2026년  3월 31일 화요일 18시 41분 29초 KST
