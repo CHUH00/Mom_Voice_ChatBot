@@ -116,4 +116,16 @@ def chat_text(message: str, request: Request):
             
         return {"reply": reply, "audio_url": audio_url}
     except Exception as e:
-        return {"reply": f"앗, 엄마가 지금 전화를 못 받네. (에러: {str(e)})"}
+        error_str = str(e)
+        logging.error(f"Chat API error: {error_str}")
+        
+        if "Connection refused" in error_str or "Failed to establish" in error_str:
+            short_err = "AI 두뇌(Ollama)가 꺼져 있습니다."
+        elif "404" in error_str or "not found" in error_str:
+            short_err = "새로운 AI 두뇌를 다운로드하는 중이거나 찾을 수 없습니다. (1~2분 뒤 다시 시도해주세요)"
+        elif "timeout" in error_str.lower():
+            short_err = "AI 응답 시간이 초과되었습니다."
+        else:
+            short_err = "알 수 없는 내부 통신 오류가 발생했습니다."
+            
+        return {"reply": f"앗, 엄마가 지금 전화를 못 받네.\n(오류: {short_err})"}
