@@ -1,0 +1,29 @@
+app:
+  name: "Mom Voice ChatBot"
+  version: "1.0.0"
+  mode: "local_free_mode" # Options: local_free_mode, hybrid_api_mode
+
+models:
+  stt:
+    type: "faster-whisper"
+    model_size: "large-v3"
+    device: "cpu" # Set to cuda/mps if available
+    compute_type: "int8"
+  
+  diarization:
+    type: "pyannote/speaker-diarization-3.1"
+  
+  speaker_verification:
+    type: "speechbrain/spkrec-ecapa-voxceleb"
+  
+  tts:
+    type: "xtts_v2" # or melotts / external
+    language: "ko"
+    
+  llm:
+    type: "ollama"
+    model_name: "llama3"
+
+audio:
+  sample_rate: 16000
+  channels: 1
