@@ -1148,10 +1148,10 @@ To https://github.com/CHUH00/Mom_Voice_ChatBot.git
 Changes pushed to GitHub at 2026년  4월  1일 수요일 00시 21분 03초 KST
 [main 897a95a] Auto-commit: 2026년  4월  1일 수요일 00시 22분 03초 KST
  1 file changed, 5 insertions(+)
-o https://github.com/CHUH00/Mom_Voice_ChatBot.git
-   e86b28e..50a204b  main -> main
-Changes pushed to GitHub at 2026년  4월  1일 수요일 00시 05분 01초 KST
-[main 08dfc1e] Auto-commit: 2026년  4월  1일 수요일 00시 06분 01초 KST
+To https://github.com/CHUH00/Mom_Voice_ChatBot.git
+   9e7c9b3..897a95a  main -> main
+Changes pushed to GitHub at 2026년  4월  1일 수요일 00시 22분 31초 KST
+main 08dfc1e] Auto-commit: 2026년  4월  1일 수요일 00시 06분 01초 KST
  1 file changed, 5 insertions(+), 5 deletions(-)
 To https://github.com/CHUH00/Mom_Voice_ChatBot.git
    7e8dae9..08dfc1e  main -> main
@@ -1231,16 +1231,13 @@ Changes pushed to GitHub at 2026년  4월  1일 수요일 00시 20분 23초 KST
 To https://github.com/CHUH00/Mom_Voice_ChatBot.git
    938307d..7040c53  main -> main
 Changes pushed to GitHub at 2026년  4월  1일 수요일 00시 21분 24초 KST
-d, 5 insertions(+), 6 deletions(-)
+[main a927789] Auto-commit: 2026년  4월  1일 수요일 00시 22분 24초 KST
+ 1 file changed, 3 insertions(+), 3 deletions(-)
 To https://github.com/CHUH00/Mom_Voice_ChatBot.git
-   fcd4281..261b085  main -> main
-Changes pushed to GitHub at 2026년  3월 31일 화요일 23시 03분 44초 KST
-[main fa10d0d] Auto-commit: 2026년  3월 31일 화요일 23시 04분 44초 KST
- 1 file changed, 5 insertions(+), 5 deletions(-)
-To https://github.com/CHUH00/Mom_Voice_ChatBot.git
-   d5027be..fa10d0d  main -> main
-Changes pushed to GitHub at 2026년  3월 31일 화요일 23시 04분 45초 KST
-[main 2538403] Auto-commit: 2026년  3월 31일 화요일 23시 05분 46초 KST
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at 897a95ab612aee7a233088a0da4b613b15dbd553 but expected 9e7c9b33e683207e28116241f4552a700468028e)
+error: 레퍼런스를 'https://github.com/CHUH00/Mom_Voice_ChatBot.git'에 푸시하는데 실패했습니다
+Changes pushed to GitHub at 2026년  4월  1일 수요일 00시 22분 41초 KST
+��요일 23시 05분 46초 KST
  1 file changed, 5 insertions(+), 6 deletions(-)
 To https://github.com/CHUH00/Mom_Voice_ChatBot.git
    7853e0f..2538403  main -> main
