@@ -701,12 +701,12 @@ Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 31분 25초 KST
 To https://github.com/CHUH00/Mom_Voice_ChatBot.git
    baa2e24..3f73533  main -> main
 Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 32분 26초 KST
- KST
- 2 files changed, 19 insertions(+), 5 deletions(-)
+[main 4e7e9ab] Auto-commit: 2026년  4월  1일 수요일 01시 33분 26초 KST
+ 1 file changed, 6 insertions(+), 1 deletion(-)
 To https://github.com/CHUH00/Mom_Voice_ChatBot.git
-   ed0946b..e0a3b2b  main -> main
-Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 05분 35초 KST
-fatal: cannot lock ref 'HEAD': is at b7a4102547a455764e95b01b7b07b56ce4bf1f02 but expected c3de51cf58b7f142ba56ab13a89eabe3c76cb8e9
+   a1191f6..4e7e9ab  main -> main
+Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 33분 27초 KST
+f1f02 but expected c3de51cf58b7f142ba56ab13a89eabe3c76cb8e9
 To https://github.com/CHUH00/Mom_Voice_ChatBot.git
  ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at b7a4102547a455764e95b01b7b07b56ce4bf1f02 but expected c3de51cf58b7f142ba56ab13a89eabe3c76cb8e9)
 error: 레퍼런스를 'https://github.com/CHUH00/Mom_Voice_ChatBot.git'에 푸시하는데 실패했습니다
@@ -908,7 +908,6 @@ To https://github.com/CHUH00/Mom_Voice_ChatBot.git
  ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at 04a6f1a759763fdcd3703185c005062ac6b574bf but expected 3f7353344d79c44ff571b1cc7b17f13e60f9928d)
 error: 레퍼런스를 'https://github.com/CHUH00/Mom_Voice_ChatBot.git'에 푸시하는데 실패했습니다
 Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 33분 07초 KST
-0시 55분 23초 KST
 fatal: '/Users/woojin/Desktop/CHUH00_Git/Mom_Voice_ChatBot/.git/index.lock' 파일을 만들 수 없습니다: File exists.
 
 이 저장소에서 다른 깃 프로세스가 실행 중인 것으로 보입니다. (예를
@@ -916,6 +915,7 @@ fatal: '/Users/woojin/Desktop/CHUH00_Git/Mom_Voice_ChatBot/.git/index.lock' 파�
 끝냈는지 확인하시고 다시 시도해 보십시오. 그래도 계속 실패하면, 이
 저장소에서 깃 프로세스가 전에 이상 종료했을 수도 있습니다:
 수동으로 해당 파일을 제거하고 계속하십시오.
+ 계속하십시오.
 Everything up-to-date
 Changes pushed to GitHub at 2026년  4월  1일 수요일 00시 56분 23초 KST
 [main fa606e0] Auto-commit: 2026년  4월  1일 수요일 00시 57분 24초 KST
