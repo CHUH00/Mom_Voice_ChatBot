@@ -324,3 +324,29 @@ INFO:     Waiting for application shutdown.
 INFO:     Application shutdown complete.
 INFO:     Finished server process [68696]
 WARNING:  WatchFiles detected changes in 'mom_voice_env/lib/python3.12/site-packages/langchain_groq/version.py', 'mom_voice_env/lib/python3.12/site-packages/groq/resources/audio/audio.py', 'mom_voice_env/lib/python3.12/site-packages/langchain_groq/chat_models.py', 'mom_voice_env/lib/python3.12/site-packages/langchain_groq/data/__init__.py', 'mom_voice_env/lib/python3.12/site-packages/groq/types/audio/transcription_create_params.py', 'mom_voice_env/lib/python3.12/site-packages/groq/resources/audio/__init__.py', 'mom_voice_env/lib/python3.12/site-packages/groq/types/audio/translation_create_params.py', 'mom_voice_env/lib/python3.12/site-packages/groq/resources/audio/transcriptions.py', 'mom_voice_env/lib/python3.12/site-packages/langchain_groq/__init__.py', 'mom_voice_env/lib/python3.12/site-packages/langchain_groq/data/_profiles.py', 'mom_voice_env/lib/python3.12/site-packages/groq/resources/chat/chat.py', 'mom_voice_env/lib/python3.12/site-packages/groq/resources/audio/translations.py', 'mom_voice_env/lib/python3.12/site-packages/groq/types/audio/transcription.py', 'mom_voice_env/lib/python3.12/site-packages/groq/types/audio/translation.py'. Reloading...
+GROQ_API_KEY is not set.
+INFO:     Started server process [68846]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [68846]
+WARNING:  WatchFiles detected changes in 'mom_voice_env/lib/python3.12/site-packages/groq/types/audio/speech_create_params.py'. Reloading...
+GROQ_API_KEY is not set.
+INFO:     Started server process [69009]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [69009]
+WARNING:  WatchFiles detected changes in 'mom_voice_env/lib/python3.12/site-packages/langchain_groq/_compat.py', 'ai_pipeline/persona.py'. Reloading...
+GROQ_API_KEY is not set.
+INFO:     Started server process [69017]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [69017]
