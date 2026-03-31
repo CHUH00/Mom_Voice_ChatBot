@@ -4,6 +4,9 @@ from langchain_groq import ChatGroq
 from langchain_core.prompts import PromptTemplate
 from typing import List, Dict
 import json
+from dotenv import load_dotenv
+
+load_dotenv("backend/.env")
 
 logger = logging.getLogger(__name__)
 
