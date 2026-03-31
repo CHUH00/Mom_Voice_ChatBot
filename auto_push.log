@@ -1420,11 +1420,12 @@ Changes pushed to GitHub at 2026년  4월  1일 수요일 02시 06분 12초 KST
 To https://github.com/CHUH00/Mom_Voice_ChatBot.git
    8d54834..49faae0  main -> main
 Changes pushed to GitHub at 2026년  4월  1일 수요일 02시 07분 13초 KST
-hanged, 15 insertions(+), 8 deletions(-)
+[main a15b503] Auto-commit: 2026년  4월  1일 수요일 02시 08분 13초 KST
+ 3 files changed, 27 insertions(+), 5 deletions(-)
 To https://github.com/CHUH00/Mom_Voice_ChatBot.git
-   110354a..e1992d4  main -> main
-Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 32분 06초 KST
-fatal: '/Users/woojin/Desktop/CHUH00_Git/Mom_Voice_ChatBot/.git/index.lock' 파일을 만들 수 없습니다: File exists.
+   674e5ef..a15b503  main -> main
+Changes pushed to GitHub at 2026년  4월  1일 수요일 02시 08분 14초 KST
+�� 수 없습니다: File exists.
 
 이 저장소에서 다른 깃 프로세스가 실행 중인 것으로 보입니다. (예를
 들어 'git commit' 명령으로 편집기가 열려 있다든지.) 모든 프로세스를
