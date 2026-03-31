@@ -183,3 +183,13 @@ INFO:     Finished server process [54831]
 INFO:     Started server process [55705]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend/api/router.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [55705]
+/Users/woojin/Desktop/CHUH00_Git/Mom_Voice_ChatBot/ai_pipeline/persona.py:13: LangChainDeprecationWarning: The class `Ollama` was deprecated in LangChain 0.3.1 and will be removed in 1.0.0. An updated version of the class exists in the `langchain-ollama package and should be used instead. To use it run `pip install -U `langchain-ollama` and import as `from `langchain_ollama import OllamaLLM``.
+  self.llm = Ollama(model=model_name)
+INFO:     Started server process [55838]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
