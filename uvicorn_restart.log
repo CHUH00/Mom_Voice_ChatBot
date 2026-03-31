@@ -12,3 +12,8 @@ INFO:     Finished server process [71169]
 INFO:     Started server process [71220]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [71220]
+INFO:     Stopping reloader process [71112]
