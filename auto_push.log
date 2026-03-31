@@ -841,14 +841,12 @@ Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 45분 54초 KST
 To https://github.com/CHUH00/Mom_Voice_ChatBot.git
    572ab9d..4745362  main -> main
 Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 46분 55초 KST
- KST
-현재 브랜치 main
-브랜치가 'origin/main'보다 1개 커밋만큼 앞에 있습니다.
-  (로컬에 있는 커밋을 제출하려면 "git push"를 사용하십시오)
-
-커밋할 사항 없음, 작업 폴더 깨끗함
+[main 0263938] Auto-commit: 2026년  4월  1일 수요일 01시 47분 55초 KST
+ 1 file changed, 9 insertions(+), 9 deletions(-)
 To https://github.com/CHUH00/Mom_Voice_ChatBot.git
-   9492087..cf26b46  main -> main
+   893ddcc..0263938  main -> main
+Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 47분 56초 KST
+26b46  main -> main
 Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 12분 43초 KST
 fatal: '/Users/woojin/Desktop/CHUH00_Git/Mom_Voice_ChatBot/.git/index.lock' 파일을 만들 수 없습니다: File exists.
 
