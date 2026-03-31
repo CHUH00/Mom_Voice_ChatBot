@@ -8,6 +8,7 @@
 .env.local
 venv/
 env/
+mom_voice_env/
 __pycache__/
 *.pyc
 *.pyo
