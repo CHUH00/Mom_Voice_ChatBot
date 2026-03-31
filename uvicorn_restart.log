@@ -350,3 +350,7 @@ INFO:     Shutting down
 INFO:     Waiting for application shutdown.
 INFO:     Application shutdown complete.
 INFO:     Finished server process [69017]
+GROQ_API_KEY is not set.
+INFO:     Started server process [69147]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
