@@ -88,3 +88,5 @@ INFO:     Finished server process [42008]
 INFO:     Started server process [42184]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend/api/router.py'. Reloading...
+INFO:     Shutting down
