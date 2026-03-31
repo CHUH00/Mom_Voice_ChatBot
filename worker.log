@@ -1,0 +1,4 @@
+02:23:56 Worker 74952ea4e2dc4fc4a6c97cb705c11276: started with PID 72038, version 2.7.0
+02:23:56 Worker 74952ea4e2dc4fc4a6c97cb705c11276: subscribing to channel rq:pubsub:74952ea4e2dc4fc4a6c97cb705c11276
+02:23:56 *** Listening on default...
+02:23:56 Worker 74952ea4e2dc4fc4a6c97cb705c11276: cleaning registries for queue: default
