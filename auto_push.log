@@ -684,16 +684,12 @@ fatal: cannot lock ref 'HEAD': is at e4ac288433e5969c2089b696793f9587a5687a16 bu
 To https://github.com/CHUH00/Mom_Voice_ChatBot.git
    06d9ff5..e4ac288  main -> main
 Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 15분 47초 KST
-m_Voice_ChatBot.git
-   22322f8..595e0ba  main -> main
-Changes pushed to GitHub at 2026년  4월  1일 수요일 00시 39분 09초 KST
-[main edcc619] Auto-commit: 2026년  4월  1일 수요일 00시 40분 09초 KST
- 1 file changed, 0 insertions(+), 0 deletions(-)
+fatal: cannot lock ref 'HEAD': is at a90cf9947b57910c03f3811111780a2eec3e85e7 but expected 114ca0f234e0c09b943a7c2996a3ef45b4bcde84
 To https://github.com/CHUH00/Mom_Voice_ChatBot.git
-   a44cf14..edcc619  main -> main
-Changes pushed to GitHub at 2026년  4월  1일 수요일 00시 40분 11초 KST
-[main 417ae5f] Auto-commit: 2026년  4월  1일 수요일 00시 41분 11초 KST
- 1 file changed, 0 insertions(+), 0 deletions(-)
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at a90cf9947b57910c03f3811111780a2eec3e85e7 but expected 114ca0f234e0c09b943a7c2996a3ef45b4bcde84)
+error: 레퍼런스를 'https://github.com/CHUH00/Mom_Voice_ChatBot.git'에 푸시하는데 실패했습니다
+Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 16분 48초 KST
+letions(-)
 error: RPC failed; HTTP 500 curl 22 The requested URL returned error: 500
 send-pack: unexpected disconnect while reading sideband packet
 fatal: the remote end hung up unexpectedly
@@ -976,3 +972,8 @@ fatal: '/Users/woojin/Desktop/CHUH00_Git/Mom_Voice_ChatBot/.git/index.lock' 파�
 끝냈는지 확인하시고 다시 시도해 보십시오. 그래도 계속 실패하면, 이
 저장소에서 깃 프로세스가 전에 이상 종료했을 수도 있습니다:
 수동으로 해당 파일을 제거하고 계속하십시오.
+[main a90cf99] Auto-commit: 2026년  4월  1일 수요일 01시 16분 47초 KST
+ 1 file changed, 15 insertions(+), 7 deletions(-)
+To https://github.com/CHUH00/Mom_Voice_ChatBot.git
+   114ca0f..a90cf99  main -> main
+Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 16분 48초 KST
