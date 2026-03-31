@@ -1409,11 +1409,12 @@ fatal: cannot lock ref 'HEAD': is at 054779f9b00b04afd09eaf09a8a9692091fdd962 bu
 To https://github.com/CHUH00/Mom_Voice_ChatBot.git
    94d5c57..054779f  main -> main
 Changes pushed to GitHub at 2026년  4월  1일 수요일 02시 06분 12초 KST
- 시도해 보십시오. 그래도 계속 실패하면, 이
-저장소에서 깃 프로세스가 전에 이상 종료했을 수도 있습니다:
-수동으로 해당 파일을 제거하고 계속하십시오.
-[main e1992d4] Auto-commit: 2026년  4월  1일 수요일 01시 32분 05초 KST
- 1 file changed, 15 insertions(+), 8 deletions(-)
+[main 49faae0] Auto-commit: 2026년  4월  1일 수요일 02시 07분 12초 KST
+ 3 files changed, 20 insertions(+), 4 deletions(-)
+To https://github.com/CHUH00/Mom_Voice_ChatBot.git
+   8d54834..49faae0  main -> main
+Changes pushed to GitHub at 2026년  4월  1일 수요일 02시 07분 13초 KST
+hanged, 15 insertions(+), 8 deletions(-)
 To https://github.com/CHUH00/Mom_Voice_ChatBot.git
    110354a..e1992d4  main -> main
 Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 32분 06초 KST
