@@ -849,11 +849,12 @@ To https://github.com/CHUH00/Mom_Voice_ChatBot.git
  ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at 01b27116a060cedd28572adeeb81e6e21c9f4f64 but expected a170190b414a0cd0526029c9fe97448df0335929)
 error: 레퍼런스를 'https://github.com/CHUH00/Mom_Voice_ChatBot.git'에 푸시하는데 실패했습니다
 Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 28분 02초 KST
-KST
- 1 file changed, 3 insertions(+), 1 deletion(-)
+[main aebcfdb] Auto-commit: 2026년  4월  1일 수요일 01시 29분 02초 KST
+ 1 file changed, 2 insertions(+)
 To https://github.com/CHUH00/Mom_Voice_ChatBot.git
- ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at f7e5e9aa0c00dc78c61d4d10570842c24698eba1 but expected 34f637e337b5da3faee71a74d9f7b645f600a502)
-error: 레퍼런스를 'https://github.com/CHUH00/Mom_Voice_ChatBot.git'에 푸시하는데 실패했습니다
+   8d563e4..aebcfdb  main -> main
+Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 29분 03초 KST
+or: 레퍼런스를 'https://github.com/CHUH00/Mom_Voice_ChatBot.git'에 푸시하는데 실패했습니다
 Changes pushed to GitHub at 2026년  4월  1일 수요일 00시 52분 19초 KST
 fatal: '/Users/woojin/Desktop/CHUH00_Git/Mom_Voice_ChatBot/.git/index.lock' 파일을 만들 수 없습니다: File exists.
 
@@ -1142,3 +1143,6 @@ To https://github.com/CHUH00/Mom_Voice_ChatBot.git
 Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 28분 01초 KST
 [main 8d563e4] Auto-commit: 2026년  4월  1일 수요일 01시 29분 01초 KST
  1 file changed, 6 insertions(+), 4 deletions(-)
+To https://github.com/CHUH00/Mom_Voice_ChatBot.git
+   86849e6..8d563e4  main -> main
+Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 29분 03초 KST
