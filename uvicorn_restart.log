@@ -231,3 +231,18 @@ INFO:     127.0.0.1:63551 - "POST /api/chat/text?message=%EB%A8%B8%ED%95%B4%3F H
 INFO:     127.0.0.1:63554 - "GET /assets/uploads/reply_0c3a1c8cb57544cd8f84bf7a152486b0.m4a HTTP/1.1" 206 Partial Content
 INFO:     127.0.0.1:63555 - "GET /assets/uploads/reply_0c3a1c8cb57544cd8f84bf7a152486b0.m4a HTTP/1.1" 206 Partial Content
 INFO:     127.0.0.1:63556 - "GET /assets/uploads/reply_0c3a1c8cb57544cd8f84bf7a152486b0.m4a HTTP/1.1" 206 Partial Content
+WARNING:  WatchFiles detected changes in 'backend/api/router.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [58241]
+/Users/woojin/Desktop/CHUH00_Git/Mom_Voice_ChatBot/ai_pipeline/persona.py:13: LangChainDeprecationWarning: The class `Ollama` was deprecated in LangChain 0.3.1 and will be removed in 1.0.0. An updated version of the class exists in the `langchain-ollama package and should be used instead. To use it run `pip install -U `langchain-ollama` and import as `from `langchain_ollama import OllamaLLM``.
+  self.llm = Ollama(model=model_name)
+INFO:     Started server process [64288]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'backend/api/router.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [64288]
