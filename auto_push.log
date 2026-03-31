@@ -882,9 +882,12 @@ Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 49분 59초 KST
 To https://github.com/CHUH00/Mom_Voice_ChatBot.git
    131afad..082bbdf  main -> main
 Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 51분 00초 KST
- 'refs/heads/main': is at 070b92eb06ca6f47600d6a0299fcc2c72acbe9b8 but expected 48842de26916699e2487a891fea0c42d3ccff4da)
-error: 레퍼런스를 'https://github.com/CHUH00/Mom_Voice_ChatBot.git'에 푸시하는데 실패했습니다
-Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 13분 45초 KST
+[main a5c530d] Auto-commit: 2026년  4월  1일 수요일 01시 52분 00초 KST
+ 1 file changed, 13 insertions(+), 6 deletions(-)
+To https://github.com/CHUH00/Mom_Voice_ChatBot.git
+   f7d43d4..a5c530d  main -> main
+Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 52분 01초 KST
+� 13분 45초 KST
 fatal: '/Users/woojin/Desktop/CHUH00_Git/Mom_Voice_ChatBot/.git/index.lock' 파일을 만들 수 없습니다: File exists.
 
 이 저장소에서 다른 깃 프로세스가 실행 중인 것으로 보입니다. (예를
