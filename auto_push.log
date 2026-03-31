@@ -984,10 +984,12 @@ Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 59분 12초 KST
 To https://github.com/CHUH00/Mom_Voice_ChatBot.git
    2a63ad5..9873499  main -> main
 Changes pushed to GitHub at 2026년  4월  1일 수요일 02시 00분 13초 KST
-른 깃 프로세스가 실행 중인 것으로 보입니다. (예를
-들어 'git commit' 명령으로 편집기가 열려 있다든지.) 모든 프로세스를
-끝냈는지 확인하시고 다시 시도해 보십시오. 그래도 계속 실패하면, 이
-저장소에서 깃 프로세스가 전에 이상 종료했을 수도 있습니다:
+[main 0d8ac4c] Auto-commit: 2026년  4월  1일 수요일 02시 01분 13초 KST
+ 1 file changed, 13 insertions(+), 4 deletions(-)
+To https://github.com/CHUH00/Mom_Voice_ChatBot.git
+   fa18561..0d8ac4c  main -> main
+Changes pushed to GitHub at 2026년  4월  1일 수요일 02시 01분 14초 KST
+에 이상 종료했을 수도 있습니다:
 수동으로 해당 파일을 제거하고 계속하십시오.
 To https://github.com/CHUH00/Mom_Voice_ChatBot.git
  ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at d267fb68ca14df2168b68f7a96ebcfb321e90659 but expected d133d9f4dd336b5ada65e17bb5392516e886a11a)
