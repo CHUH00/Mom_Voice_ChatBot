@@ -1136,10 +1136,12 @@ Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 48분 42초 KST
  1 file changed, 2 insertions(+)
 Everything up-to-date
 Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 49분 43초 KST
-(-)
+[main 131afad] Auto-commit: 2026년  4월  1일 수요일 01시 50분 43초 KST
+ 1 file changed, 2 insertions(+)
 To https://github.com/CHUH00/Mom_Voice_ChatBot.git
- ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at cf26b46ef58d6e6ad538763cd3756576561aa7c6 but expected 94920873e65c04e612fcbd259d5d87d75f00a45e)
-error: 레퍼런스를 'https://github.com/CHUH00/Mom_Voice_ChatBot.git'에 푸시하는데 실패했습니다
+   b6147f4..131afad  main -> main
+Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 50분 44초 KST
+om_Voice_ChatBot.git'에 푸시하는데 실패했습니다
 Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 12분 43초 KST
 fatal: cannot lock ref 'HEAD': is at 070b92eb06ca6f47600d6a0299fcc2c72acbe9b8 but expected 48842de26916699e2487a891fea0c42d3ccff4da
 To https://github.com/CHUH00/Mom_Voice_ChatBot.git
@@ -1430,3 +1432,7 @@ To https://github.com/CHUH00/Mom_Voice_ChatBot.git
 Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 49분 43초 KST
 [main bf7b567] Auto-commit: 2026년  4월  1일 수요일 01시 50분 43초 KST
  1 file changed, 6 insertions(+), 1 deletion(-)
+To https://github.com/CHUH00/Mom_Voice_ChatBot.git
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at 131afade62168898642707bf11b843772a083818 but expected b6147f4e183affdbb591ba15a4a1dca71e0bbea1)
+error: 레퍼런스를 'https://github.com/CHUH00/Mom_Voice_ChatBot.git'에 푸시하는데 실패했습니다
+Changes pushed to GitHub at 2026년  4월  1일 수요일 01시 50분 44초 KST
