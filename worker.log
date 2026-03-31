@@ -1,0 +1,4 @@
+00:30:41 Worker 0995259673b24cb4a4e8fc5b4f93e585: started with PID 55919, version 2.7.0
+00:30:41 Worker 0995259673b24cb4a4e8fc5b4f93e585: subscribing to channel rq:pubsub:0995259673b24cb4a4e8fc5b4f93e585
+00:30:41 *** Listening on default...
+00:30:41 Worker 0995259673b24cb4a4e8fc5b4f93e585: cleaning registries for queue: default
