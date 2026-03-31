@@ -18,7 +18,7 @@ redis_conn = Redis.from_url(settings.REDIS_URL)
 task_queue = Queue(connection=redis_conn)
 
 try:
-    persona_engine = PersonaEngine(model_name="qwen2.5:7b")
+    persona_engine = PersonaEngine(model_name="llama-3.3-70b-versatile")
 except Exception as e:
     logging.error(f"Failed to initialize PersonaEngine: {e}")
     persona_engine = None
