@@ -1,7 +1,7 @@
 import os
 import logging
 from langchain_community.llms import Ollama
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
 from typing import List, Dict
 import json
 
