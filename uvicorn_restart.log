@@ -64,3 +64,5 @@ INFO:     Started server process [37279]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     127.0.0.1:60889 - "POST /api/audio/upload HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60937 - "POST /api/audio/upload HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60938 - "POST /api/chat/text?message=%EC%95%88%EB%85%95+%EC%97%84%EB%A7%88 HTTP/1.1" 200 OK
