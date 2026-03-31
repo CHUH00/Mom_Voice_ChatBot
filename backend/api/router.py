@@ -8,10 +8,18 @@ from backend.services.audio_service import process_separation_job
 from rq import Queue
 from redis import Redis
 from backend.core.config import settings
+from ai_pipeline.persona import PersonaEngine
+import logging
 
 api_router = APIRouter()
 redis_conn = Redis.from_url(settings.REDIS_URL)
 task_queue = Queue(connection=redis_conn)
+
+try:
+    persona_engine = PersonaEngine(model_name="llama3")
+except Exception as e:
+    logging.error(f"Failed to initialize PersonaEngine: {e}")
+    persona_engine = None
 
 @api_router.post("/auth/pin/setup")
 def setup_pin(pin: str):
@@ -80,5 +88,18 @@ def get_separation_result(upload_id: int):
 
 @api_router.post("/chat/text")
 def chat_text(message: str):
-    # Dummy chat integration mapping to AI Pipeline
-    return {"reply": "응, 우리 딸(아들). 밥은 먹었어?"}
+    if persona_engine is None:
+        return {"reply": "응, 시스템에 접속되지 않았단다. (Llama3 로딩 실패)"}
+        
+    try:
+        rules = {
+            "tone": "따뜻함, 다정함, 아들/딸 걱정",
+            "common_phrases": ["밥은 먹었어?", "아이고 우리 예쁜 거", "어디 아픈 덴 없고?"],
+            "endings": ["자니?", "~했어?", "알았어"],
+            "topics": ["건강", "밥", "날씨", "가족"]
+        }
+        
+        reply = persona_engine.chat_with_persona(query=message, profile_rules=rules, chat_history=[])
+        return {"reply": reply}
+    except Exception as e:
+        return {"reply": f"앗, 엄마가 지금 전화를 못 받네. (에러: {str(e)})"}
