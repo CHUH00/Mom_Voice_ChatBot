@@ -14,7 +14,7 @@ import subprocess
 import uuid
 
 # In-memory conversation history (resets on server restart)
-conversation_history: list = []
+conversation_history: List[str] = []
 
 api_router = APIRouter()
 redis_conn = Redis.from_url(settings.REDIS_URL)
@@ -104,27 +104,47 @@ def chat_text(message: str, request: Request):
             "topics": ["건강", "밥", "날씨", "가족"]
         }
         
-        reply = persona_engine.chat_with_persona(
-            query=message,
-            profile_rules=rules,
-            chat_history=conversation_history[-10:]  # 업마지 최근 10개 대화만 전달
-        )
+        if persona_engine:
+            reply = persona_engine.chat_with_persona(
+                query=message,
+                profile_rules=rules,
+                chat_history=conversation_history[-10:]  # 최근 10개 대화만 전달
+            )
+        else:
+            reply = "시스템에 접속되지 않았단다. (PersonaEngine is None)"
         
         # 대화 기록 저장
         conversation_history.append(f"자녀: {message}")
         conversation_history.append(f"엄마: {reply}")
         
-        # Fallback TTS using macOS 'say' (Yuna voice)
-        audio_filename = f"reply_{uuid.uuid4().hex}.m4a"
+        # Try real voice clone via XTTS TTS server (port 8001)
+        audio_filename = f"reply_{uuid.uuid4().hex}.wav"
         audio_filepath = os.path.join("assets", "uploads", audio_filename)
         try:
-            subprocess.run(["say", "-v", "Yuna", "-o", audio_filepath, reply], check=True)
-            base_url = str(request.base_url).rstrip('/')
-            audio_url = f"{base_url}/assets/uploads/{audio_filename}"
+            import httpx
+            tts_response = httpx.post(
+                "http://127.0.0.1:8001/synthesize",
+                json={"text": reply},
+                timeout=60.0
+            )
+            if tts_response.status_code == 200:
+                with open(audio_filepath, "wb") as f:
+                    f.write(tts_response.content)
+                base_url = str(request.base_url).rstrip('/')
+                audio_url = f"{base_url}/assets/uploads/{audio_filename}"
+            else:
+                raise Exception(f"TTS server error: {tts_response.status_code}")
         except Exception as e:
-            logging.error(f"TTS generation failed: {e}")
-            audio_url = None
-            
+            logging.warning(f"XTTS server unavailable, falling back to say: {e}")
+            audio_filename = f"reply_{uuid.uuid4().hex}.m4a"
+            audio_filepath = os.path.join("assets", "uploads", audio_filename)
+            try:
+                subprocess.run(["say", "-v", "Yuna", "-o", audio_filepath, reply], check=True)
+                base_url = str(request.base_url).rstrip('/')
+                audio_url = f"{base_url}/assets/uploads/{audio_filename}"
+            except Exception as e2:
+                logging.error(f"Fallback TTS failed: {e2}")
+                audio_url = None
         return {"reply": reply, "audio_url": audio_url}
     except Exception as e:
         error_str = str(e)

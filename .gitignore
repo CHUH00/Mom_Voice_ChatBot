@@ -8,11 +8,17 @@
 .env.local
 venv/
 env/
-mom_voice_env/
+mom_env/
+tts_env/
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
+# Logs and Runtime files
+*.log
+auto_push.log
+*.rdb
 
 # Database
 *.db

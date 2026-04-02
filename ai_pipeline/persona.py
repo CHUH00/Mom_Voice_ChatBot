@@ -2,7 +2,7 @@ import os
 import logging
 from langchain_groq import ChatGroq
 from langchain_core.prompts import PromptTemplate
-from typing import List, Dict
+from typing import List, Dict, Optional
 import json
 from dotenv import load_dotenv
 
@@ -47,13 +47,16 @@ class PersonaEngine:
             """
         )
         
+        if not self.llm:
+            logger.error("LLM is not initialized.")
+            return {}
+
         # This assumes the LLM can output JSON correctly
         chain = prompt | self.llm
         try:
-            if not self.llm:
-                return {}
             response_obj = chain.invoke({"texts": combined_text, "user_notes": user_notes})
-            response = response_obj.content if hasattr(response_obj, 'content') else str(response_obj)
+            response = str(getattr(response_obj, 'content', response_obj))
+            
             # Naive parsing
             start_idx = response.find("{")
             end_idx = response.rfind("}") + 1
@@ -65,7 +68,7 @@ class PersonaEngine:
             logger.error(f"Failed to extract persona: {e}")
             return {}
 
-    def chat_with_persona(self, query: str, profile_rules: Dict, chat_history: List[str] = None):
+    def chat_with_persona(self, query: str, profile_rules: Dict, chat_history: Optional[List[str]] = None):
         """
         Generate a response maintaining the persona.
         """
@@ -133,12 +136,13 @@ class PersonaEngine:
 엄마:"""
         )
         
-        chain = prompt | self.llm
         if not self.llm:
             return "앗, 엄마가 지금 전화를 못 받네. (Groq API 키가 입력되지 않았습니다!)"
+
+        chain = prompt | self.llm
         try:
             response_obj = chain.invoke({"few_shots": FEW_SHOT_EXAMPLES, "rules": rules_str, "history": history_str, "query": query})
-            return response_obj.content if hasattr(response_obj, 'content') else str(response_obj)
+            return str(getattr(response_obj, 'content', response_obj))
         except Exception as e:
             logger.error(f"Groq API Error: {e}")
             return f"(오류: API 통신 실패 - {str(e)})"

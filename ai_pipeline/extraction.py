@@ -2,7 +2,7 @@ import os
 import torch
 import torchaudio
 from speechbrain.inference.speaker import EncoderClassifier
-from typing import List, Dict
+from typing import List, Dict, Optional
 import numpy as np
 import logging
 
@@ -23,7 +23,7 @@ class SpeakerExtractor:
             logger.error(f"Failed to load SpeechBrain model: {e}")
             self.classifier = None
             
-    def compute_embedding(self, audio_path: str, start: float = None, end: float = None) -> torch.Tensor:
+    def compute_embedding(self, audio_path: str, start: Optional[float] = None, end: Optional[float] = None) -> torch.Tensor:
         """
         Compute utterance embedding for a complete audio or a specific segment.
         """
@@ -33,6 +33,9 @@ class SpeakerExtractor:
             start_frame = int(start * fs)
             end_frame = int(end * fs)
             signal = signal[:, start_frame:end_frame]
+            
+        if not self.classifier:
+            raise RuntimeError("Speaker classifier not loaded.")
             
         # speechbrain expects batch x channels x samples or batch x samples
         embeddings = self.classifier.encode_batch(signal)
