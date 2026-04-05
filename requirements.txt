@@ -21,3 +21,4 @@ langchain-community>=0.0.34
 langchain-chroma>=0.1.1
 httpx>=0.25.0
 python-dotenv>=1.0.0
+ 
