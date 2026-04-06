@@ -5,7 +5,7 @@ logger = logging.getLogger(__name__)
 
 class TTSService:
     def __init__(self, use_xtts=True):
-        self.use_xtts = use_xtts
+        self.use_xtts = use_xtts 
         self.tts = None
         
         if self.use_xtts:
