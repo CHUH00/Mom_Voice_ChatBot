@@ -5,7 +5,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 class AudioProcessor:
-    def __init__(self, target_sr=16000):
+    def __init__(self, target_sr=16000): 
         self.target_sr = target_sr
 
     def preprocess(self, input_path: str, output_path: str) -> bool:
