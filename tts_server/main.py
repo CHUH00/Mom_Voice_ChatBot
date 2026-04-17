@@ -11,7 +11,7 @@ try:
     setattr(transformers, "ConstrainedBeamSearchScorer", ConstrainedBeamSearchScorer)
 except ImportError:
     pass
-
+ 
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import FileResponse
 from pydantic import BaseModel
