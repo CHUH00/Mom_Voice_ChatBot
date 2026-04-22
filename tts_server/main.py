@@ -3,7 +3,7 @@ import sys
 import uuid
 import glob
 import transformers
-
+ 
 # Critical monkey-patch: Force BeamSearchScorer into transformers if missing
 try:
     from transformers.generation.beam_search import BeamSearchScorer, ConstrainedBeamSearchScorer
